@@ -1,0 +1,41 @@
+@media screen and (max-width:426px) {
+    body {
+        background-color: black;
+    }
+
+    .btn {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .btn button {
+        font-size: 15px;
+    }
+
+    .para {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .user_timer {
+        width: 100%;
+        height: auto;
+    }
+
+    .user_timer input {
+        width: 50%;
+        height: auto;
+        padding: 12px;
+        margin: 6px;
+    }
+
+    .stop_watch {
+        width: 100%;
+        height: auto;
+    }
+
+    .stop_watch button {
+        width: 50%;
+    }
+
+}

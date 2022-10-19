@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date And Time</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responses.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>This is A timer Function</h1>
+    </div>
+    <div class="btn">
+        <button id="btn1" onclick="currentTime()">Today Date & Time</button>
+        <button id="btn2" onclick="mytimer()">Pre Define Timer</button>
+    </div>
+    <div class="para">
+        <p id="my_date">There will be current time.</p>
+        <p id="curr_timer">New Year Pending 2023.</p>
+    </div>
+    <h1>Please Select Date & Time Here....</h1>
+    <div class="user_timer">
+        <input type="date" id="date">
+        <input type="time" id="time">
+    </div>
+    <div class="stop_watch">
+        <button onclick="stopwatch()" id="btn3">Submit Date & Time</button>
+        <h3 id="pending_time">Pending Time</h3>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

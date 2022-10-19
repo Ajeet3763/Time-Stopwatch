@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* header styling start here===>>>>>>>>>>>> */
+.header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: blueviolet;
+    color: beige;
+}
+
+.btn {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.btn button {
+    width: 50%;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: greenyellow;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 10% 5% 10% rgb(0, 0, 10%);
+
+    position: relative;
+    border: none;
+    z-index: 1;
+}
+
+/* button animation====>>>>>>>>> */
+button::before,
+button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    border-radius: 10px;
+}
+
+#btn1::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+
+#btn1:hover::after {
+    height: 100%;
+    background-color: crimson;
+}
+
+#btn2::after {
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+
+#btn2:hover::after {
+    height: 100%;
+    background-color: crimson;
+}
+
+/* para styling start here===>>>>>>>>>>>>> */
+.para {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+p {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* user timer styling start here=======>>>>>>>>> */
+h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: blueviolet;
+    color: beige;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.user_timer {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.user_timer input {
+    width: 20%;
+    padding: 10px;
+    margin: 5px 27px 5px 52px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+/* stop watch styling start here===>>>>>>>>>>>>>> */
+.stop_watch {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.stop_watch button {
+    margin: 10px;
+    width: 15%;
+    height: 7vh;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: yellowgreen;
+
+    position: relative;
+    border: none;
+    z-index: 1;
+}
+
+.stop_watch h3 {
+    font-size: 25px;
+    color: bisque;
+    padding: 10px;
+}
+
+.stop_watch button::before,
+.stop_watch button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    border-radius: 10px;
+}
+
+#btn3::after {
+    width: 0;
+    height: 80%;
+    left: 0;
+    top: 0;
+    transform: skew(0deg);
+    transition-duration: 0.6s;
+    transform-origin: bottom top;
+}
+
+#btn3:hover:after {
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
